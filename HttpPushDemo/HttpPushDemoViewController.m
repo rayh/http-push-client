@@ -7,6 +7,7 @@
 //
 
 #import "HttpPushDemoViewController.h"
+#import "HttpPushClient.h"
 
 @implementation HttpPushDemoViewController
 
@@ -25,13 +26,18 @@
 
 #pragma mark - View lifecycle
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSURL *url = [NSURL URLWithString:@"http://localhost:4567"];
+    HttpPushClient *client = [[HttpPushClient alloc] initWithURL:url callback:^(NSData *chunk) {
+        NSLog(@"Received: %@", [[[NSString alloc] initWithData:chunk encoding:NSUTF8StringEncoding] autorelease]);
+    }];
+    
+    [client start];
 }
-*/
 
 - (void)viewDidUnload
 {

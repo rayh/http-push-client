@@ -22,6 +22,8 @@
 		71E1E02C13C2EB53006D2DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E02A13C2EB53006D2DD6 /* InfoPlist.strings */; };
 		71E1E02F13C2EB53006D2DD6 /* HttpPushDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E02E13C2EB53006D2DD6 /* HttpPushDemoTests.h */; };
 		71E1E03113C2EB53006D2DD6 /* HttpPushDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E03013C2EB53006D2DD6 /* HttpPushDemoTests.m */; };
+		71E1E03D13C2EB9E006D2DD6 /* HttpPushClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E03C13C2EB9E006D2DD6 /* HttpPushClient.m */; };
+		71E1E03E13C2EB9E006D2DD6 /* HttpPushClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E03C13C2EB9E006D2DD6 /* HttpPushClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +41,24 @@
 		71E1E00113C2EB53006D2DD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71E1E00313C2EB53006D2DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71E1E00513C2EB53006D2DD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		71E1E00913C2EB53006D2DD6 /* HttpPushDemo-Info.plist */ = {isa = PBXFileReference; path = "HttpPushDemo-Info.plist"; sourceTree = "<group>"; };
+		71E1E00913C2EB53006D2DD6 /* HttpPushDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpPushDemo-Info.plist"; sourceTree = "<group>"; };
 		71E1E00B13C2EB53006D2DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		71E1E00D13C2EB53006D2DD6 /* HttpPushDemo-Prefix.pch */ = {isa = PBXFileReference; path = "HttpPushDemo-Prefix.pch"; sourceTree = "<group>"; };
+		71E1E00D13C2EB53006D2DD6 /* HttpPushDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpPushDemo-Prefix.pch"; sourceTree = "<group>"; };
 		71E1E00E13C2EB53006D2DD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		71E1E01013C2EB53006D2DD6 /* HttpPushDemoAppDelegate.h */ = {isa = PBXFileReference; path = HttpPushDemoAppDelegate.h; sourceTree = "<group>"; };
+		71E1E01013C2EB53006D2DD6 /* HttpPushDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpPushDemoAppDelegate.h; sourceTree = "<group>"; };
 		71E1E01113C2EB53006D2DD6 /* HttpPushDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpPushDemoAppDelegate.m; sourceTree = "<group>"; };
 		71E1E01413C2EB53006D2DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		71E1E01613C2EB53006D2DD6 /* HttpPushDemoViewController.h */ = {isa = PBXFileReference; path = HttpPushDemoViewController.h; sourceTree = "<group>"; };
+		71E1E01613C2EB53006D2DD6 /* HttpPushDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpPushDemoViewController.h; sourceTree = "<group>"; };
 		71E1E01713C2EB53006D2DD6 /* HttpPushDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpPushDemoViewController.m; sourceTree = "<group>"; };
 		71E1E01A13C2EB53006D2DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HttpPushDemoViewController.xib; sourceTree = "<group>"; };
 		71E1E02113C2EB53006D2DD6 /* HttpPushDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpPushDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		71E1E02913C2EB53006D2DD6 /* HttpPushDemoTests-Info.plist */ = {isa = PBXFileReference; path = "HttpPushDemoTests-Info.plist"; sourceTree = "<group>"; };
+		71E1E02913C2EB53006D2DD6 /* HttpPushDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HttpPushDemoTests-Info.plist"; sourceTree = "<group>"; };
 		71E1E02B13C2EB53006D2DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		71E1E02D13C2EB53006D2DD6 /* HttpPushDemoTests-Prefix.pch */ = {isa = PBXFileReference; path = "HttpPushDemoTests-Prefix.pch"; sourceTree = "<group>"; };
+		71E1E02D13C2EB53006D2DD6 /* HttpPushDemoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpPushDemoTests-Prefix.pch"; sourceTree = "<group>"; };
 		71E1E02E13C2EB53006D2DD6 /* HttpPushDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpPushDemoTests.h; sourceTree = "<group>"; };
 		71E1E03013C2EB53006D2DD6 /* HttpPushDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpPushDemoTests.m; sourceTree = "<group>"; };
+		71E1E03B13C2EB9E006D2DD6 /* HttpPushClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpPushClient.h; sourceTree = "<group>"; };
+		71E1E03C13C2EB9E006D2DD6 /* HttpPushClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpPushClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		71E1DFF213C2EB52006D2DD6 = {
 			isa = PBXGroup;
 			children = (
+				71E1E03A13C2EB6D006D2DD6 /* HttpPushClient */,
 				71E1E00713C2EB53006D2DD6 /* HttpPushDemo */,
 				71E1E02713C2EB53006D2DD6 /* HttpPushDemoTests */,
 				71E1E00013C2EB53006D2DD6 /* Frameworks */,
@@ -153,6 +158,15 @@
 				71E1E02D13C2EB53006D2DD6 /* HttpPushDemoTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E1E03A13C2EB6D006D2DD6 /* HttpPushClient */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E03B13C2EB9E006D2DD6 /* HttpPushClient.h */,
+				71E1E03C13C2EB9E006D2DD6 /* HttpPushClient.m */,
+			);
+			path = HttpPushClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 				71E1E00F13C2EB53006D2DD6 /* main.m in Sources */,
 				71E1E01213C2EB53006D2DD6 /* HttpPushDemoAppDelegate.m in Sources */,
 				71E1E01813C2EB53006D2DD6 /* HttpPushDemoViewController.m in Sources */,
+				71E1E03D13C2EB9E006D2DD6 /* HttpPushClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E1E03113C2EB53006D2DD6 /* HttpPushDemoTests.m in Sources */,
+				71E1E03E13C2EB9E006D2DD6 /* HttpPushClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +380,7 @@
 				GCC_PREFIX_HEADER = "HttpPushDemo/HttpPushDemo-Prefix.pch";
 				INFOPLIST_FILE = "HttpPushDemo/HttpPushDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,6 +394,7 @@
 				GCC_PREFIX_HEADER = "HttpPushDemo/HttpPushDemo-Prefix.pch";
 				INFOPLIST_FILE = "HttpPushDemo/HttpPushDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,6 +465,7 @@
 				71E1E03613C2EB53006D2DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E1E03713C2EB53006D2DD6 /* Build configuration list for PBXNativeTarget "HttpPushDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +474,7 @@
 				71E1E03913C2EB53006D2DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
