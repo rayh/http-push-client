@@ -20,6 +20,7 @@
 @synthesize url=url_;
 @synthesize currentConnection=currentConnection_;
 @synthesize block=block_;
+@synthesize reconnectAfterDelay=reconnectAfterDelay_;
 
 - (id)initWithURL:(NSURL*)url callback:(HttpPushClientBlock)block 
 {
@@ -27,6 +28,7 @@
     {
         self.url = url;
         self.block = block;
+        self.reconnectAfterDelay = 1.;
     }
     return self;
 }
@@ -49,7 +51,7 @@
 - (void)reconnectIfRequired
 {
     if(!isActive_) return;
-    [self performSelector:@selector(beginPersistentHttpConnection) withObject:nil afterDelay:1.];
+    [self performSelector:@selector(beginPersistentHttpConnection) withObject:nil afterDelay:self.reconnectAfterDelay];
 }
 
 - (void)beginPersistentHttpConnection 
@@ -57,8 +59,7 @@
     NSMutableURLRequest *theRequest=[NSMutableURLRequest requestWithURL:self.url
                                               cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                           timeoutInterval:3600.0];
-    [theRequest setNetworkServiceType:NSURLNetworkServiceTypeVoIP];
-    
+   
 //    NSInputStream *requestStream = [[NSInputStream alloc] init];
 //    [requestStream pu]
 //    [theRequest setHTTPBodyStream:];

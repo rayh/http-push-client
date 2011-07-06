@@ -15,7 +15,10 @@ typedef void (^HttpPushClientBlock)(NSData *chunk);
     NSURL *url_;
     NSURLConnection *currentConnection_;
     BOOL isActive_;
+    NSTimeInterval reconnectAfterDelay_;
 }
+
+@property (nonatomic, assign) NSTimeInterval reconnectAfterDelay;
 
 
 - (id)initWithURL:(NSURL*)url callback:(HttpPushClientBlock)block;

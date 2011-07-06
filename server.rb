@@ -24,7 +24,7 @@ loop {                         # Servers run forever
     sleep rand(5)
     puts "Send data"
     data = {:hello => "This is chunk #{chunks}", :time => Time.now.iso8601}.to_json
-    client.print(data.bytesize.to_s(16))  # Send the time to the client
+    client.print "#{data.bytesize.to_s(16)};extension"
     client.print "\r\n"
     client.print data
     client.print "\r\n"
